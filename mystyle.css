@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    background: goldenrod;
+
+}
+
+header {
+    padding: 10px 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#to-do-list-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#to-do-list-input{
+    flex: 1 1 0%;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 10%;
+    margin-right: 10px;
+    color: blue;
+    font-size: 14px;
+
+}
+
+#to-do-list-input::placeholder{
+    color: white;
+}
+
+#to-do-list-submit{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: gold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#to-do-list-submit:hover{
+    opacity: 0.8;
+}
+
+#to-do-list-submit:active{
+    opacity: 0.9;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 20px;
+}
+
+.task-list h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: pink;
+    margin-bottom: 10px;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+#tasks .task .content .text{
+    color: aqua;
+    font-size: 36px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: black;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 0;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button: active{
+    opacity: 0.5;
+}
+
+.task .actions. edit{
+    color: red;
+}
+
+.task .actions .delete{
+    color: chartreuse;
+}
+
